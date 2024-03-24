@@ -19,7 +19,6 @@ public class InzhenerkaLoginTest {
         loginPage.setPassword("admin123");
         loginPage.checkLoginButtonExists();
         loginPage.login();
-        loginPage.logout();
     }
 
     @Test
@@ -32,9 +31,9 @@ public class InzhenerkaLoginTest {
         loginPage.checkLoginButtonExists();
         loginPage.login();
         loginPage.checkNameHeaderExists();
-        loginPage.logout();
         }
     @ParameterizedTest
+    @DisplayName("Тест с параметризацией")
     @ValueSource(strings = {"admin"})
     public void loginWithDifferentUsers(String username) {
         LoginPage loginPage = new LoginPage();
