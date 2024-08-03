@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-public class InzhenerkaLoginTest {
+public class InzhenerkaLoginTest extends BaseTest {
     @Test
     @Disabled("Тест временно отключен из-за проблемы X")
     void someTestThatFails() {
